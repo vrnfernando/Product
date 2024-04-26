@@ -135,8 +135,13 @@ class ProductViewModel {
     
     func setDragProductItemToCollection(index: Int, product: Product?){
         var items = _productsCollection.value
-        items.insert(product!, at: index)
-        _productsCollection.accept(items)
+        if !items.isEmpty {
+            items.insert(product!, at: index)
+            _productsCollection.accept(items)
+        }else{
+            items.append(product!)
+            _productsCollection.accept(items)
+        }
     }
     
     //Collection
