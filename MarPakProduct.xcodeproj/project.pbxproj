@@ -1,0 +1,882 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		06D39E14A0082BC8172EBD16 /* Pods_MarPakProduct.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A46C9218E4763CBE1B18624 /* Pods_MarPakProduct.framework */; };
+		535A92A3D3BDA7B83AED99D7 /* Pods_MarPakProduct_MarPakProductUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC02E5E4AD6F9D4440AD12BE /* Pods_MarPakProduct_MarPakProductUITests.framework */; };
+		C55F8D862BDC08230086901F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55F8D852BDC08230086901F /* AppDelegate.swift */; };
+		C55F8D882BDC08230086901F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55F8D872BDC08230086901F /* SceneDelegate.swift */; };
+		C55F8D8A2BDC08230086901F /* ProductListsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55F8D892BDC08230086901F /* ProductListsViewController.swift */; };
+		C55F8D8D2BDC08230086901F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C55F8D8B2BDC08230086901F /* Main.storyboard */; };
+		C55F8D902BDC08230086901F /* MarPakProduct.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C55F8D8E2BDC08230086901F /* MarPakProduct.xcdatamodeld */; };
+		C55F8D922BDC08260086901F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C55F8D912BDC08260086901F /* Assets.xcassets */; };
+		C55F8D952BDC08260086901F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C55F8D932BDC08260086901F /* LaunchScreen.storyboard */; };
+		C55F8DA02BDC08260086901F /* MarPakProductTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55F8D9F2BDC08260086901F /* MarPakProductTests.swift */; };
+		C55F8DAA2BDC08260086901F /* MarPakProductUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55F8DA92BDC08260086901F /* MarPakProductUITests.swift */; };
+		C55F8DAC2BDC08260086901F /* MarPakProductUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55F8DAB2BDC08260086901F /* MarPakProductUITestsLaunchTests.swift */; };
+		C55F8DBD2BDC12220086901F /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55F8DBC2BDC12220086901F /* Product.swift */; };
+		C55F8DC22BDC12D00086901F /* ProductCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55F8DC02BDC12D00086901F /* ProductCollectionViewCell.swift */; };
+		C55F8DC32BDC12D00086901F /* ProductCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C55F8DC12BDC12D00086901F /* ProductCollectionViewCell.xib */; };
+		C55F8DC62BDC12E70086901F /* ProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55F8DC42BDC12E70086901F /* ProductTableViewCell.swift */; };
+		C55F8DC72BDC12E70086901F /* ProductTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C55F8DC52BDC12E70086901F /* ProductTableViewCell.xib */; };
+		C55F8DCA2BDC19180086901F /* ProductViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55F8DC92BDC19180086901F /* ProductViewModel.swift */; };
+		C55F8DCD2BDC20620086901F /* ProductUpdateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55F8DCC2BDC20620086901F /* ProductUpdateViewController.swift */; };
+		C55F8DD12BDC271A0086901F /* UIViewControllerExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55F8DD02BDC271A0086901F /* UIViewControllerExtention.swift */; };
+		D343B3DD399D2E775506892C /* Pods_MarPakProductTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD0521FF589ECD24401E3505 /* Pods_MarPakProductTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C55F8D9C2BDC08260086901F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C55F8D7A2BDC08220086901F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C55F8D812BDC08230086901F;
+			remoteInfo = MarPakProduct;
+		};
+		C55F8DA62BDC08260086901F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C55F8D7A2BDC08220086901F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C55F8D812BDC08230086901F;
+			remoteInfo = MarPakProduct;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2A46C9218E4763CBE1B18624 /* Pods_MarPakProduct.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MarPakProduct.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3ACCA88A00189F561304EEC3 /* Pods-MarPakProduct.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarPakProduct.release.xcconfig"; path = "Target Support Files/Pods-MarPakProduct/Pods-MarPakProduct.release.xcconfig"; sourceTree = "<group>"; };
+		60583DB245E22A750FA3B461 /* Pods-MarPakProduct-MarPakProductUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarPakProduct-MarPakProductUITests.release.xcconfig"; path = "Target Support Files/Pods-MarPakProduct-MarPakProductUITests/Pods-MarPakProduct-MarPakProductUITests.release.xcconfig"; sourceTree = "<group>"; };
+		8D0D7E47CD3EE711CB97030D /* Pods-MarPakProduct-MarPakProductUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarPakProduct-MarPakProductUITests.debug.xcconfig"; path = "Target Support Files/Pods-MarPakProduct-MarPakProductUITests/Pods-MarPakProduct-MarPakProductUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A65DB48301B4904E66B90701 /* Pods-MarPakProductTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarPakProductTests.debug.xcconfig"; path = "Target Support Files/Pods-MarPakProductTests/Pods-MarPakProductTests.debug.xcconfig"; sourceTree = "<group>"; };
+		BC02E5E4AD6F9D4440AD12BE /* Pods_MarPakProduct_MarPakProductUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MarPakProduct_MarPakProductUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C55F8D822BDC08230086901F /* MarPakProduct.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarPakProduct.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C55F8D852BDC08230086901F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C55F8D872BDC08230086901F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C55F8D892BDC08230086901F /* ProductListsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListsViewController.swift; sourceTree = "<group>"; };
+		C55F8D8C2BDC08230086901F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C55F8D8F2BDC08230086901F /* MarPakProduct.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MarPakProduct.xcdatamodel; sourceTree = "<group>"; };
+		C55F8D912BDC08260086901F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C55F8D942BDC08260086901F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C55F8D962BDC08260086901F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C55F8D9B2BDC08260086901F /* MarPakProductTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarPakProductTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C55F8D9F2BDC08260086901F /* MarPakProductTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarPakProductTests.swift; sourceTree = "<group>"; };
+		C55F8DA52BDC08260086901F /* MarPakProductUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarPakProductUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C55F8DA92BDC08260086901F /* MarPakProductUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarPakProductUITests.swift; sourceTree = "<group>"; };
+		C55F8DAB2BDC08260086901F /* MarPakProductUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarPakProductUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C55F8DBC2BDC12220086901F /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		C55F8DC02BDC12D00086901F /* ProductCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCollectionViewCell.swift; sourceTree = "<group>"; };
+		C55F8DC12BDC12D00086901F /* ProductCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductCollectionViewCell.xib; sourceTree = "<group>"; };
+		C55F8DC42BDC12E70086901F /* ProductTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTableViewCell.swift; sourceTree = "<group>"; };
+		C55F8DC52BDC12E70086901F /* ProductTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductTableViewCell.xib; sourceTree = "<group>"; };
+		C55F8DC92BDC19180086901F /* ProductViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewModel.swift; sourceTree = "<group>"; };
+		C55F8DCC2BDC20620086901F /* ProductUpdateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductUpdateViewController.swift; sourceTree = "<group>"; };
+		C55F8DD02BDC271A0086901F /* UIViewControllerExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtention.swift; sourceTree = "<group>"; };
+		DD0521FF589ECD24401E3505 /* Pods_MarPakProductTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MarPakProductTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1119BA411392022F74DA422 /* Pods-MarPakProductTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarPakProductTests.release.xcconfig"; path = "Target Support Files/Pods-MarPakProductTests/Pods-MarPakProductTests.release.xcconfig"; sourceTree = "<group>"; };
+		F20A7174BE943F4435179134 /* Pods-MarPakProduct.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarPakProduct.debug.xcconfig"; path = "Target Support Files/Pods-MarPakProduct/Pods-MarPakProduct.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C55F8D7F2BDC08230086901F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06D39E14A0082BC8172EBD16 /* Pods_MarPakProduct.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C55F8D982BDC08260086901F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D343B3DD399D2E775506892C /* Pods_MarPakProductTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C55F8DA22BDC08260086901F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				535A92A3D3BDA7B83AED99D7 /* Pods_MarPakProduct_MarPakProductUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3DDD012753396A1FAD0EF92C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2A46C9218E4763CBE1B18624 /* Pods_MarPakProduct.framework */,
+				BC02E5E4AD6F9D4440AD12BE /* Pods_MarPakProduct_MarPakProductUITests.framework */,
+				DD0521FF589ECD24401E3505 /* Pods_MarPakProductTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5FC1B3959B6AE9F12D997CEB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F20A7174BE943F4435179134 /* Pods-MarPakProduct.debug.xcconfig */,
+				3ACCA88A00189F561304EEC3 /* Pods-MarPakProduct.release.xcconfig */,
+				8D0D7E47CD3EE711CB97030D /* Pods-MarPakProduct-MarPakProductUITests.debug.xcconfig */,
+				60583DB245E22A750FA3B461 /* Pods-MarPakProduct-MarPakProductUITests.release.xcconfig */,
+				A65DB48301B4904E66B90701 /* Pods-MarPakProductTests.debug.xcconfig */,
+				F1119BA411392022F74DA422 /* Pods-MarPakProductTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C55F8D792BDC08220086901F = {
+			isa = PBXGroup;
+			children = (
+				C55F8D842BDC08230086901F /* MarPakProduct */,
+				C55F8D9E2BDC08260086901F /* MarPakProductTests */,
+				C55F8DA82BDC08260086901F /* MarPakProductUITests */,
+				C55F8D832BDC08230086901F /* Products */,
+				5FC1B3959B6AE9F12D997CEB /* Pods */,
+				3DDD012753396A1FAD0EF92C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C55F8D832BDC08230086901F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C55F8D822BDC08230086901F /* MarPakProduct.app */,
+				C55F8D9B2BDC08260086901F /* MarPakProductTests.xctest */,
+				C55F8DA52BDC08260086901F /* MarPakProductUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C55F8D842BDC08230086901F /* MarPakProduct */ = {
+			isa = PBXGroup;
+			children = (
+				C55F8DCE2BDC26F00086901F /* Utils */,
+				C55F8DBA2BDC08B40086901F /* ViewModel */,
+				C55F8DB92BDC08A90086901F /* View */,
+				C55F8DB82BDC08990086901F /* Model */,
+				C55F8D852BDC08230086901F /* AppDelegate.swift */,
+				C55F8D872BDC08230086901F /* SceneDelegate.swift */,
+				C55F8D912BDC08260086901F /* Assets.xcassets */,
+				C55F8D932BDC08260086901F /* LaunchScreen.storyboard */,
+				C55F8D962BDC08260086901F /* Info.plist */,
+				C55F8D8E2BDC08230086901F /* MarPakProduct.xcdatamodeld */,
+			);
+			path = MarPakProduct;
+			sourceTree = "<group>";
+		};
+		C55F8D9E2BDC08260086901F /* MarPakProductTests */ = {
+			isa = PBXGroup;
+			children = (
+				C55F8D9F2BDC08260086901F /* MarPakProductTests.swift */,
+			);
+			path = MarPakProductTests;
+			sourceTree = "<group>";
+		};
+		C55F8DA82BDC08260086901F /* MarPakProductUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C55F8DA92BDC08260086901F /* MarPakProductUITests.swift */,
+				C55F8DAB2BDC08260086901F /* MarPakProductUITestsLaunchTests.swift */,
+			);
+			path = MarPakProductUITests;
+			sourceTree = "<group>";
+		};
+		C55F8DB82BDC08990086901F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C55F8DBC2BDC12220086901F /* Product.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C55F8DB92BDC08A90086901F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C55F8DCB2BDC200F0086901F /* ProductUpdate */,
+				C55F8DBB2BDC09980086901F /* Products */,
+				C55F8D8B2BDC08230086901F /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C55F8DBA2BDC08B40086901F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C55F8DC92BDC19180086901F /* ProductViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C55F8DBB2BDC09980086901F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C55F8DBF2BDC12750086901F /* TableViewCell */,
+				C55F8DBE2BDC126B0086901F /* CollectionViewCell */,
+				C55F8D892BDC08230086901F /* ProductListsViewController.swift */,
+			);
+			path = Products;
+			sourceTree = "<group>";
+		};
+		C55F8DBE2BDC126B0086901F /* CollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				C55F8DC02BDC12D00086901F /* ProductCollectionViewCell.swift */,
+				C55F8DC12BDC12D00086901F /* ProductCollectionViewCell.xib */,
+			);
+			path = CollectionViewCell;
+			sourceTree = "<group>";
+		};
+		C55F8DBF2BDC12750086901F /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				C55F8DC42BDC12E70086901F /* ProductTableViewCell.swift */,
+				C55F8DC52BDC12E70086901F /* ProductTableViewCell.xib */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		C55F8DCB2BDC200F0086901F /* ProductUpdate */ = {
+			isa = PBXGroup;
+			children = (
+				C55F8DCC2BDC20620086901F /* ProductUpdateViewController.swift */,
+			);
+			path = ProductUpdate;
+			sourceTree = "<group>";
+		};
+		C55F8DCE2BDC26F00086901F /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				C55F8DCF2BDC26F60086901F /* Extentions */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		C55F8DCF2BDC26F60086901F /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				C55F8DD02BDC271A0086901F /* UIViewControllerExtention.swift */,
+			);
+			path = Extentions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C55F8D812BDC08230086901F /* MarPakProduct */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C55F8DAF2BDC08260086901F /* Build configuration list for PBXNativeTarget "MarPakProduct" */;
+			buildPhases = (
+				4CB8C5333C8E0BBFAE480BB1 /* [CP] Check Pods Manifest.lock */,
+				C55F8D7E2BDC08230086901F /* Sources */,
+				C55F8D7F2BDC08230086901F /* Frameworks */,
+				C55F8D802BDC08230086901F /* Resources */,
+				E3CC8D0A37D7CD27BB59C4F1 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MarPakProduct;
+			productName = MarPakProduct;
+			productReference = C55F8D822BDC08230086901F /* MarPakProduct.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C55F8D9A2BDC08260086901F /* MarPakProductTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C55F8DB22BDC08260086901F /* Build configuration list for PBXNativeTarget "MarPakProductTests" */;
+			buildPhases = (
+				F210461BA6920F7C4DECA69B /* [CP] Check Pods Manifest.lock */,
+				C55F8D972BDC08260086901F /* Sources */,
+				C55F8D982BDC08260086901F /* Frameworks */,
+				C55F8D992BDC08260086901F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C55F8D9D2BDC08260086901F /* PBXTargetDependency */,
+			);
+			name = MarPakProductTests;
+			productName = MarPakProductTests;
+			productReference = C55F8D9B2BDC08260086901F /* MarPakProductTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C55F8DA42BDC08260086901F /* MarPakProductUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C55F8DB52BDC08260086901F /* Build configuration list for PBXNativeTarget "MarPakProductUITests" */;
+			buildPhases = (
+				45590ABE6B160158A7A3522E /* [CP] Check Pods Manifest.lock */,
+				C55F8DA12BDC08260086901F /* Sources */,
+				C55F8DA22BDC08260086901F /* Frameworks */,
+				C55F8DA32BDC08260086901F /* Resources */,
+				32BF0667B882D59D0949FEAA /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C55F8DA72BDC08260086901F /* PBXTargetDependency */,
+			);
+			name = MarPakProductUITests;
+			productName = MarPakProductUITests;
+			productReference = C55F8DA52BDC08260086901F /* MarPakProductUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C55F8D7A2BDC08220086901F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					C55F8D812BDC08230086901F = {
+						CreatedOnToolsVersion = 14.0;
+					};
+					C55F8D9A2BDC08260086901F = {
+						CreatedOnToolsVersion = 14.0;
+						TestTargetID = C55F8D812BDC08230086901F;
+					};
+					C55F8DA42BDC08260086901F = {
+						CreatedOnToolsVersion = 14.0;
+						TestTargetID = C55F8D812BDC08230086901F;
+					};
+				};
+			};
+			buildConfigurationList = C55F8D7D2BDC08220086901F /* Build configuration list for PBXProject "MarPakProduct" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C55F8D792BDC08220086901F;
+			productRefGroup = C55F8D832BDC08230086901F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C55F8D812BDC08230086901F /* MarPakProduct */,
+				C55F8D9A2BDC08260086901F /* MarPakProductTests */,
+				C55F8DA42BDC08260086901F /* MarPakProductUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C55F8D802BDC08230086901F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C55F8D952BDC08260086901F /* LaunchScreen.storyboard in Resources */,
+				C55F8D922BDC08260086901F /* Assets.xcassets in Resources */,
+				C55F8DC72BDC12E70086901F /* ProductTableViewCell.xib in Resources */,
+				C55F8DC32BDC12D00086901F /* ProductCollectionViewCell.xib in Resources */,
+				C55F8D8D2BDC08230086901F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C55F8D992BDC08260086901F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C55F8DA32BDC08260086901F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		32BF0667B882D59D0949FEAA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MarPakProduct-MarPakProductUITests/Pods-MarPakProduct-MarPakProductUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MarPakProduct-MarPakProductUITests/Pods-MarPakProduct-MarPakProductUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MarPakProduct-MarPakProductUITests/Pods-MarPakProduct-MarPakProductUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		45590ABE6B160158A7A3522E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MarPakProduct-MarPakProductUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4CB8C5333C8E0BBFAE480BB1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MarPakProduct-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E3CC8D0A37D7CD27BB59C4F1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MarPakProduct/Pods-MarPakProduct-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MarPakProduct/Pods-MarPakProduct-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MarPakProduct/Pods-MarPakProduct-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F210461BA6920F7C4DECA69B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MarPakProductTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C55F8D7E2BDC08230086901F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C55F8D8A2BDC08230086901F /* ProductListsViewController.swift in Sources */,
+				C55F8DD12BDC271A0086901F /* UIViewControllerExtention.swift in Sources */,
+				C55F8D862BDC08230086901F /* AppDelegate.swift in Sources */,
+				C55F8DCD2BDC20620086901F /* ProductUpdateViewController.swift in Sources */,
+				C55F8DC62BDC12E70086901F /* ProductTableViewCell.swift in Sources */,
+				C55F8DBD2BDC12220086901F /* Product.swift in Sources */,
+				C55F8D882BDC08230086901F /* SceneDelegate.swift in Sources */,
+				C55F8DC22BDC12D00086901F /* ProductCollectionViewCell.swift in Sources */,
+				C55F8DCA2BDC19180086901F /* ProductViewModel.swift in Sources */,
+				C55F8D902BDC08230086901F /* MarPakProduct.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C55F8D972BDC08260086901F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C55F8DA02BDC08260086901F /* MarPakProductTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C55F8DA12BDC08260086901F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C55F8DAC2BDC08260086901F /* MarPakProductUITestsLaunchTests.swift in Sources */,
+				C55F8DAA2BDC08260086901F /* MarPakProductUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C55F8D9D2BDC08260086901F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C55F8D812BDC08230086901F /* MarPakProduct */;
+			targetProxy = C55F8D9C2BDC08260086901F /* PBXContainerItemProxy */;
+		};
+		C55F8DA72BDC08260086901F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C55F8D812BDC08230086901F /* MarPakProduct */;
+			targetProxy = C55F8DA62BDC08260086901F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C55F8D8B2BDC08230086901F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C55F8D8C2BDC08230086901F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C55F8D932BDC08260086901F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C55F8D942BDC08260086901F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C55F8DAD2BDC08260086901F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C55F8DAE2BDC08260086901F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C55F8DB02BDC08260086901F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F20A7174BE943F4435179134 /* Pods-MarPakProduct.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LDDAW7QUM9;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MarPakProduct/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.marpak.MarPakProduct;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C55F8DB12BDC08260086901F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3ACCA88A00189F561304EEC3 /* Pods-MarPakProduct.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LDDAW7QUM9;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MarPakProduct/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.marpak.MarPakProduct;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C55F8DB32BDC08260086901F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A65DB48301B4904E66B90701 /* Pods-MarPakProductTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LDDAW7QUM9;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.marpak.MarPakProductTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MarPakProduct.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MarPakProduct";
+			};
+			name = Debug;
+		};
+		C55F8DB42BDC08260086901F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1119BA411392022F74DA422 /* Pods-MarPakProductTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LDDAW7QUM9;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.marpak.MarPakProductTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MarPakProduct.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MarPakProduct";
+			};
+			name = Release;
+		};
+		C55F8DB62BDC08260086901F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D0D7E47CD3EE711CB97030D /* Pods-MarPakProduct-MarPakProductUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LDDAW7QUM9;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.marpak.MarPakProductUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MarPakProduct;
+			};
+			name = Debug;
+		};
+		C55F8DB72BDC08260086901F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60583DB245E22A750FA3B461 /* Pods-MarPakProduct-MarPakProductUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LDDAW7QUM9;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.marpak.MarPakProductUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MarPakProduct;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C55F8D7D2BDC08220086901F /* Build configuration list for PBXProject "MarPakProduct" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C55F8DAD2BDC08260086901F /* Debug */,
+				C55F8DAE2BDC08260086901F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C55F8DAF2BDC08260086901F /* Build configuration list for PBXNativeTarget "MarPakProduct" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C55F8DB02BDC08260086901F /* Debug */,
+				C55F8DB12BDC08260086901F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C55F8DB22BDC08260086901F /* Build configuration list for PBXNativeTarget "MarPakProductTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C55F8DB32BDC08260086901F /* Debug */,
+				C55F8DB42BDC08260086901F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C55F8DB52BDC08260086901F /* Build configuration list for PBXNativeTarget "MarPakProductUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C55F8DB62BDC08260086901F /* Debug */,
+				C55F8DB72BDC08260086901F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C55F8D8E2BDC08230086901F /* MarPakProduct.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C55F8D8F2BDC08230086901F /* MarPakProduct.xcdatamodel */,
+			);
+			currentVersion = C55F8D8F2BDC08230086901F /* MarPakProduct.xcdatamodel */;
+			path = MarPakProduct.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = C55F8D7A2BDC08220086901F /* Project object */;
+}

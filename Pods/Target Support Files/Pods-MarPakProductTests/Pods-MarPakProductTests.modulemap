@@ -1,0 +1,6 @@
+framework module Pods_MarPakProductTests {
+  umbrella header "Pods-MarPakProductTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
